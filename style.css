@@ -1,0 +1,1389 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    background-color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px;
+    border-radius: 22px;
+
+}
+
+.logo:hover {
+    background-color: rgb(215, 215, 215);
+    transition: 0.3s ease;
+}
+
+.logo h4 {
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border: 1px solid rgb(173, 173, 173);
+    border-radius: 25px;
+    padding: 3px 8px;
+    margin-right: 1.2rem;
+
+}
+
+.profile:hover {
+    background-color: rgb(215, 215, 215);
+    transition: 0.3s ease;
+}
+
+.profileInfo p {
+    font-size: 12px;
+}
+
+.profileInfo h3 {
+    font-weight: 500;
+}
+
+.divName {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    border: none;
+    text-align: center;
+
+}
+
+.socialSection {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    
+}
+
+.cursorPointer {
+    cursor: pointer;
+}
+
+.rig {
+    display: flex;
+    align-items: center;
+
+}
+
+.svg1 {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.svg1:hover {
+    background-color: rgb(218, 217, 217);
+    transition: 0.3s ease;
+}
+
+.svg2 {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.svg2:hover {
+    background-color: rgb(218, 217, 217);
+    transition: 0.3s ease;
+}
+
+.svg3 {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.svg3:hover {
+    background-color: rgb(218, 217, 217);
+    transition: 0.3s ease;
+}
+
+.svg4 {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.svg4:hover {
+    background-color: rgb(218, 217, 217);
+    transition: 0.3s ease;
+}
+
+.svg5 {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.svg5:hover {
+    background-color: rgb(218, 217, 217);
+    transition: 0.3s ease;
+}
+
+.svg6 {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-right: 12!px; */
+}
+
+.svg6:hover {
+    background-color: rgb(218, 217, 217);
+    transition: 0.3s ease;
+}
+
+.exploreBest {
+   
+    padding: 37px 0px;
+    background: rgb(190, 174, 182);
+    background-color: red;
+    color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.exploreBest h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+
+}
+
+.container {
+    height: 54vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px;
+    margin-bottom: 44px;
+    position: relative;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.box1 {
+    border: 1px solid black;
+    width: 62vw;
+    height: 45vh;
+    border-radius: 12px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./images/house.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.box2 {
+    position: relative;
+    border: 1px solid black;
+    width: 62vw;
+    height: 45vh;
+    margin-left: 1rem;
+    border-radius: 12px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./images/car.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.box3 {
+    position: relative;
+    border: 1px solid black;
+    width: 62vw;
+    height: 45vh;
+    margin-left: 1rem;
+    border-radius: 12px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./images/plants.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.boxInfo {
+    color: white;
+    position: absolute;
+    bottom: 30px;
+    padding: 0px 23px;
+}
+
+.boxInfo h1 {
+    font-weight: 500;
+    font-size: 29px;
+}
+
+.boxInfo .btn {
+    padding: 9px;
+    width: 7rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    border-radius: 22px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.title p {
+    text-align: center;
+}
+
+.containerCards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 43px;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
+}
+
+.card {
+    width: 20vw;
+    height: 20vh;
+    
+    border-radius: 12px;
+}
+.containerHamInfo{
+    height: 40vh;
+    background-color: white;
+}
+
+
+.containerCards :nth-child(1) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./images/animal.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerCards :nth-child(1) h1 {
+    color: white;
+    background: none;
+    font-weight: 500;
+}
+
+.containerCards :nth-child(2) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./images/art.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerCards :nth-child(2) h1 {
+    color: white;
+    background: none;
+    font-weight: 500;
+}
+
+.containerCards :nth-child(3) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./images/lambo.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerCards :nth-child(3) h1 {
+    color: white;
+    background: none;
+    font-weight: 500;
+}
+
+.containerCards :nth-child(4) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./images/design.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerCards :nth-child(4) h1 {
+    color: white;
+    background: none;
+    font-weight: 500;
+}
+
+.containerCards :nth-child(5) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./images/craft.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerCards :nth-child(5) h1 {
+    color: white;
+    background: none;
+    font-weight: 500;
+}
+
+.containerCards :nth-child(6) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./images/food.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerCards :nth-child(6) h1 {
+    color: white;
+    background: none;
+    font-weight: 500;
+}
+
+.containerCards :nth-child(7) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./images/decor.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerCards :nth-child(7) h1 {
+    color: white;
+    background: none;
+    font-weight: 500;
+}
+
+.containerCards :nth-child(8) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./images/mens.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerCards :nth-child(8) h1 {
+    color: white;
+    background: none;
+    font-weight: 500;
+}
+
+.containerCards :nth-child(9) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./images/quotes.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerCards :nth-child(9) h1 {
+    color: white;
+    background: none;
+    font-weight: 500;
+}
+
+.containerCards :nth-child(10) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./images/anime.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerCards :nth-child(10) h1 {
+    color: white;
+    background: none;
+    font-weight: 500;
+}
+
+.containerCards :nth-child(11) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./images/travel.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerCards :nth-child(11) h1 {
+    color: white;
+    background: none;
+    font-weight: 500;
+}
+
+.containerCards :nth-child(12) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./images/games.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerCards :nth-child(12) h1 {
+    color: white;
+    background: none;
+    font-weight: 500;
+}
+
+.containerCards :nth-child(13) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./images/boxing.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.containerCards :nth-child(13) h1 {
+    color: white;
+    background: none;
+    font-weight: 500;
+}
+
+.containerCards :nth-child(14) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./images/kitchen.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.containerCards :nth-child(14) h1 {
+    color: white;
+    background: none;
+    font-weight: 500;
+}
+
+.containerCards :nth-child(15) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./images/tatoos.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.containerCards :nth-child(15) h1 {
+    color: white;
+    background: none;
+    font-weight: 500;
+}
+
+.containerCards :nth-child(16) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./images/bike.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.containerCards :nth-child(16) h1 {
+    color: white;
+    background: none;
+    font-weight: 500;
+}
+
+.show {
+    width: 9rem;
+    height: 7vh;
+    border: none;
+    border-radius: 23px;
+    background-color: red;
+    color: white;
+}
+
+.show:hover {
+    background-color: rgb(147, 4, 4);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.containerHamInfo{
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    height: 90vh;
+  
+    overflow-y: hidden;
+}
+.containerHamInfo a{
+    position: absolute;
+    top:45%;
+    z-index: 1;
+    padding: 5vh 1vw;
+    background: #ffffff4f;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+}
+.controlNext{
+    right: 0;
+}
+.containerHamInfo .listItems{
+    display: flex;
+    overflow-y: hidden;
+}
+.header-img{
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(80%);
+    
+}
+.divInformation{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    right: 50%;
+    bottom: 50%;
+    width: 50vw;
+    text-align: center;
+}
+.divInformation h1{
+    color: white;
+    font-size: 45px;
+    text-align: center;
+}
+.divInformation button{
+    width: 9rem;
+    height: 7vh;
+    border: none;
+    border-radius: 23px;
+    background-color: red;
+    color: white;
+    font-size: 16px;
+    margin-top: 1rem;
+}
+.display h1{ 
+    margin-top: 15%;
+}
+.display2 h1{ 
+    margin-top: 15%;
+}
+.display3 h1{ 
+    margin-top: 15%;
+}
+.display4 h1{ 
+    margin-top: 15%;
+}
+.menuInfo{
+    height: 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    padding: 23px;
+    position: fixed;
+    left: -120%;
+    display: none;
+    width: 28vw;
+    z-index: 1;
+    background-color: white;
+    overflow-y: auto;
+    transition: 0.5s ease-in-out;
+    
+}
+.menuInfo::-webkit-scrollbar{
+    visibility: hidden;
+}
+.shortcuts ul{
+    list-style: none;
+    margin-top: 0.5rem;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 0.5rem;
+    color: rgb(112, 112, 112);
+}
+.shortcuts h1{
+    font-weight: 600;
+}
+.profileDropdown{
+    height: 40vh;
+    width: 29vw;
+    background-color: white;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
+    position: fixed;
+    z-index: 10;
+    /* left: 5; */
+    left: -120%;
+    top: 14%;
+    border-radius: 12px;
+    display: none;
+}
+.tite{
+    padding: 12px;
+}
+.tite h2{
+    
+    font-weight: 500;
+}
+.layer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px 22px;
+}
+.pack{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    /* font-weight: 300; */
+}
+.pack h3{
+    font-weight: 500;
+}
+.slate {
+    height: 3vh;
+    background-color: rgb(231, 231, 231);
+    border: 1px solid rgb(207, 207, 207);
+    color: white;
+    border-radius: 12px;
+    max-width: 20vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding: 7px 42px;
+    justify-content: space-between;
+    /* gap: 10px; */
+}
+.leftAcc{
+    background-color: white;
+    color: black;
+    padding: 0px 12px;
+    border-radius: 9px;
+
+}
+.leftAcc h3{
+    font-weight: 500;
+}
+.rightAcc h3{
+    font-weight: 500;
+    color: black;
+}
+.input{
+    max-width: 30vw;
+    margin: auto;
+    text-align: center;
+    margin-top: 0.6rem;
+}
+.input input{
+    outline: none;
+    border: 1px solid gray;
+    padding: 12px;
+    border-radius: 23px;
+    width: 26vw;
+}
+.tite2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+    padding: 0px 22px;
+}
+.search input{
+    width: 48vw;
+    /* padding: 5px; */
+    height: 8vh;
+    border-radius: 23px;
+    outline: none;
+    border: none;
+    background-color: rgb(222, 222, 222);
+    display: none;
+}
+.notificationDropdown{
+    position: fixed;
+    right: -100%;
+    display: none;
+    height: 100%;
+    width: 28vw;
+    background-color: white;
+    z-index: 1;
+    border-radius: 12px;
+    overflow-y: auto;
+    padding: 12px;
+}
+.heading h2{
+    text-align: center;
+    font-weight: 500;
+}
+.heading{
+    padding: 12px;
+}
+.infoCard1{
+    padding: 6px 12px;
+    margin-top: 1rem;
+    background-color: white;
+    box-shadow: rgba(79, 79, 132, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    border-radius: 12px;
+}
+.commentContainer{
+    position: fixed;
+    height: 100%;
+    width: 28vw;
+    background: white;
+    z-index: 1;
+    right: -120%;
+    border-radius: 12px;
+    overflow-y: auto;
+    display: none;
+
+}
+.headingComment h2{
+    text-align: center;
+
+}
+.headingComment{
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search3{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+.search3 input{
+    width: 25vw;
+    height: 7vh;
+    border-radius: 23px;
+    outline: none;
+    border: 1px solid rgb(192, 192, 192);
+    padding: 0px 5px;
+}
+.message{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 1rem;
+    padding: 0px 22px;
+}
+.meSec{
+    margin-top: 3rem;
+    margin-left: 1rem;
+}
+.hoversec{
+    padding-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 17px;
+}
+.dropAccount{
+    position: fixed;
+    right: -120%;
+    background-color: white;
+    width: 28vw;
+    height: 100%;
+    z-index: 1;
+    overflow-y: auto;
+    display: none;
+
+}
+.dropTitle{
+    padding: 22px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: space-between;
+}
+.dropTitle h2{
+    font-weight: 500;
+    font-size: 16px;
+}
+.dropTitle p{
+    font-size: 13px;
+}
+.packet{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.bottomAccount{
+    padding: 12px;
+}
+.bottomAccount :nth-child(1){
+    font-size: 12px;
+}
+.bottomAccount :nth-child(2){
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.blue{
+    max-width: 27vw;
+    background-color: #d7edff;
+    margin: auto;
+    height: 12vh;
+    border-radius: 23px;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    padding: 12px;
+    gap: 10px;
+}
+.help{
+    margin-top: 1rem;
+    padding: 12px;
+}
+.help :nth-child(1){
+    font-size: 12px;
+}
+.helpCard :nth-child(1){
+    font-size: 18px;
+    font-weight: 500;
+
+}
+.helpCard{
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.box1Content{
+    width: 30.5vw;
+    height: 16vh;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.224);
+    backdrop-filter: blur(5px);
+    border-radius: 4px;
+    /* left: 2%; */
+    top: 51px;
+    left: -120%;
+    display: none;
+    transition: 0.4s;
+}
+.box2Content{
+    width: 30.5vw;
+    height: 16vh;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.224);
+    backdrop-filter: blur(5px);
+    border-radius: 4px;
+    top: 51px;
+    left: -150%;
+    display: none;
+}
+.box2Content h2{
+    text-align: center;
+    color: white; 
+}
+.box2Content button{
+    width: 6rem;
+    height: 7vh;
+    background: transparent;
+    /* border: none; */
+    color: white;
+    border: 1px solid white;
+    border-radius: 7px;
+}
+.box3Content{
+    width: 30.5vw;
+    height: 16vh;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.224);
+    backdrop-filter: blur(5px);
+    border-radius: 4px;
+    top: 51px;
+    /* left: 67%; */
+    right: -120%;
+    display: none;
+}
+.box3Content h2{
+    text-align: center;
+    color: white; 
+}
+.box3Content button{
+    width: 6rem;
+    height: 7vh;
+    background: transparent;
+    /* border: none; */
+    color: white;
+    border: 1px solid white;
+    border-radius: 7px;
+}
+.box1Content h2{
+    text-align: center;
+    color: white;
+}
+.box1Content button{
+    width: 6rem;
+    height: 7vh;
+    background: transparent;
+    /* border: none; */
+    color: white;
+    border: 1px solid white;
+    border-radius: 7px;
+}
+.containerButto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 4px 0px;
+}
+.transition{
+    transition: 0.5s ease-in-out;
+}
+.box1:hover{
+    background-color: black;
+    filter: brightness(70%);
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+.box2:hover{
+    background-color: black;
+    filter: brightness(70%);
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+.box3:hover{
+    background-color: black;
+    filter: brightness(70%);
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+.containerCards .card:hover{
+    background-color: black;
+    filter: brightness(70%);
+    transition: 0.2s ease;
+    cursor: pointer;
+   
+}
+.questionMark{
+width: 50px ;
+height: 50px;
+position: fixed;
+bottom: 1%;
+right: 1%;
+background-color: white;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+@media screen and (max-width: 1200px){
+.divInformation{
+    top: 34%;
+}
+.boxInfo h1{
+    font-size: 22px;
+}
+}
+@media screen and (max-width: 955px){
+    .divInformation h1{
+        font-size: 32px !important;
+    }
+    .boxInfo .btn{
+        font-size: 12px;
+    }
+    .container{
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        height: 88vh;
+    }
+ .box1{
+    width: 96vw;
+ }
+.box2{
+    width: 96vw;
+}
+.box3{
+    width: 96vw;
+    } 
+    .containerCards{
+        font-size: 11px;
+    }
+}
+@media screen and (max-width: 830px){
+    .containerHamInfo{
+        height: 42vh;
+    }
+    .divInformation{
+        top: 16%;
+    }
+    .container{
+        pointer-events: none;
+    }
+    .divInformation button{
+        width: 12rem;
+    height: 5vh;
+    }
+    .containerHamInfo a{
+        top: 21%;
+    }
+    .containerCards{
+        flex-direction: column;
+    }
+    .card{
+        width: 88vw;
+    }
+    .card h1{
+        font-size: 22px;
+    }
+    .dropAccount{
+        width: 36vw;
+    }
+    .commentContainer{
+        width: 38vw;
+    }
+    .search3 input{
+        width: 32vw;
+        height: 5vh;
+    }
+    .notificationDropdown{
+        width: 43vw;
+    }
+    .containerHamInfo{
+        height: 38vh;
+    }
+}
+@media screen and (max-width: 770px){
+    .containerHamInfo{
+        height: 42vh;
+    }
+    .divInformation{
+        top: 16%;
+    }
+    .container{
+        pointer-events: none;
+    }
+    .divInformation button{
+        width: 12rem;
+    height: 5vh;
+    }
+    .containerHamInfo a{
+        top: 21%;
+    }
+    .containerCards{
+        flex-direction: column;
+    }
+    .card{
+        width: 88vw;
+    }
+    .card h1{
+        font-size: 22px;
+    }
+    .dropAccount{
+        width: 36vw;
+    }
+    .commentContainer{
+        width: 38vw;
+    }
+    .search3 input{
+        width: 32vw;
+        height: 5vh;
+    }
+    .notificationDropdown{
+        width: 43vw;
+    }
+}
+@media screen and (max-width: 650px){
+    body,html{
+        overflow-x: hidden;
+    }
+    .profile{
+        display: none;
+    }
+    .container{
+        pointer-events: none;
+    }
+    .svg4 , .svg5{
+        display: none;
+    }
+    .divInformation{
+        height: 55px;
+    }
+    .divInformation h1{
+        font-size: 31px !important;
+    }
+    .divInformation button{
+        height: 9vh;
+    }
+    nav{
+        position: fixed;
+        top: 0;
+        width: 94vw;
+    }
+    .notificationDropdown{
+        top: 17%;
+        width: 35vw;
+    }
+    .commentContainer{
+        top: 12%;
+        width: 37vw;
+        overflow: auto;
+    }
+    .container{
+        pointer-events: all;
+    }
+}
+@media screen and (max-width: 440px){
+     .containerHamInfo{
+        height: 28vh;
+    }
+    .container{
+        pointer-events: none;
+    }
+    .containerHamInfo a{
+        top: 10%;
+    }
+    .listItems {
+        height: 28vh;
+    }
+    .divInformation h1{
+        font-size: 16px !important;
+    }
+    .divInformation {
+        top: 11%;
+    }
+    .divInformation button{
+        height: 4vh;
+        width: 32vw;
+    }
+    .exploreBest h1{
+        font-size: 22px;
+    }
+    .box2, .box3{
+        margin-left: 0;
+    }
+    .containerCards{
+        flex-direction: column;
+    }
+    .card{
+        width: 84vw;
+    }
+    .card h1{
+        font-size: 27px !important;
+    }
+    .menuInfo{
+        top: 8%;
+        width: 40vw;
+    }
+    .notificationDropdown{
+        top: 8%;
+        width: 47vw;
+    }
+    .commentContainer{
+        top: 8%;
+        width: 56vw;
+    }
+    .search3 input{
+        width: 47vw;
+    height: 5vh;
+    }
+    .dropAccount {
+        top: 8%;
+        width: 49vw;
+    }
+    .blue{
+        max-width: 39vw;
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 415px){
+    .containerHamInfo{
+        height: 28vh;
+    }
+    
+    .containerHamInfo a{
+        top: 10%;
+    }
+    .listItems {
+        height: 28vh;
+    }
+    .divInformation h1{
+        font-size: 16px !important;
+    }
+    .divInformation {
+        top: 11%;
+    }
+    .divInformation button{
+        height: 4vh;
+        width: 32vw;
+    }
+    .exploreBest h1{
+        font-size: 22px;
+    }
+    .box2, .box3{
+        margin-left: 0;
+    }
+    .containerCards{
+        flex-direction: column;
+    }
+    .card{
+        width: 84vw;
+    }
+    .card h1{
+        font-size: 27px !important;
+    }
+    .menuInfo{
+        top: 8%;
+        width: 40vw;
+    }
+    .notificationDropdown{
+        top: 8%;
+        width: 47vw;
+    }
+    .commentContainer{
+        top: 8%;
+        width: 56vw;
+    }
+    .search3 input{
+        width: 47vw;
+    height: 5vh;
+    }
+    .dropAccount {
+        top: 8%;
+        width: 49vw;
+    }
+    .blue{
+        max-width: 39vw;
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 391px){
+    .dropAccount{
+        width: 58vw;
+    }
+    .blue{
+        max-width: 53vw;
+    }
+    .container{
+        pointer-events: none;
+    }
+}
+@media screen and (max-width: 378px){
+    nav{
+        padding: 11px 9px;
+        width: 96vw;
+    }
+    .containerHamInfo{
+        height: 32vh;
+    }
+    .listItems img{
+        width: 100vw;
+        height: 34vh;
+    }
+    .listItems{
+        height: 34vh;
+    }
+    .containerHamInfo a{
+        top: 12%;
+    }
+    .divInformation{
+        top: 14%;
+    }
+    .card{
+        width: 77vw;
+    }
+    .divInformation h1{
+        font-size: 12px !important;
+    }
+    .divInformation button{
+        height: 4vh;
+    width: 29vw;
+    font-size: 12px;
+    }
+    .notificationDropdown{
+        width: 58vw;
+    }
+    .commentContainer{
+        width: 60vw;
+    }
+    .dropAccount{
+        width: 58vw;
+    }
+    .blue{
+        max-width: 49vw;
+    }
+    .container{
+        pointer-events: all;
+    }
+}
+@media screen and (max-width: 330px){
+    .containerHamInfo{
+        height: 39vh;
+    }
+    .listItems{
+        height: 39vh;
+
+    }
+    .listItems img{
+        height: 39vh;
+    }
+    .container{
+        height: 100vh;
+    }
+    .card{
+        width: 72vw;
+    }
+    .card h1{
+        font-size: 15px !important;
+    }
+    .container{
+        pointer-events: none;
+    }
+}

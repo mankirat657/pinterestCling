@@ -1,0 +1,1996 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    background-color: white;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px;
+    border-radius: 22px;
+
+}
+.menuInfo{
+    height: 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    padding: 23px;
+    position: fixed;
+    left: -120%;
+    display: none;
+    width: 28vw;
+    z-index: 10;
+    background-color: white;
+    overflow-y: auto;
+    transition: 0.5s ease-in-out;
+    
+}
+.menuInfo::-webkit-scrollbar{
+    visibility: hidden;
+}
+.menuInfo ul{
+    list-style: none;
+}
+
+.logo:hover {
+    background-color: rgb(215, 215, 215);
+    transition: 0.3s ease;
+}
+
+.logo h4 {
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border: 1px solid rgb(173, 173, 173);
+    border-radius: 25px;
+    padding: 3px 8px;
+    margin-right: 1.2rem;
+
+}
+
+.profile:hover {
+    background-color: rgb(215, 215, 215);
+    transition: 0.3s ease;
+}
+.profileDropdown{
+    height: 40vh;
+    width: 29vw;
+    background-color: white;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
+    position: fixed;
+    z-index: 10;
+    /* left: 5; */
+    left: -120%;
+    top: 14%;
+    border-radius: 12px;
+    display: none;
+}
+.tite{
+    padding: 12px;
+}
+.tite h2{
+    
+    font-weight: 500;
+}
+.layer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px 22px;
+}
+.pack{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    /* font-weight: 300; */
+}
+.pack h3{
+    font-weight: 500;
+}
+.slate {
+    height: 3vh;
+    background-color: rgb(231, 231, 231);
+    border: 1px solid rgb(207, 207, 207);
+    color: white;
+    border-radius: 12px;
+    max-width: 20vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding: 7px 42px;
+    justify-content: space-between;
+    /* gap: 10px; */
+}
+.leftAcc{
+    background-color: white;
+    color: black;
+    padding: 0px 12px;
+    border-radius: 9px;
+
+}
+.leftAcc h3{
+    font-weight: 500;
+}
+.rightAcc h3{
+    font-weight: 500;
+    color: black;
+}
+.input{
+    max-width: 30vw;
+    margin: auto;
+    text-align: center;
+    margin-top: 0.6rem;
+}
+.input input{
+    outline: none;
+    border: 1px solid gray;
+    padding: 12px;
+    border-radius: 23px;
+    width: 26vw;
+}
+.tite2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+    padding: 0px 22px;
+}
+.search input{
+    width: 48vw;
+    /* padding: 5px; */
+    height: 8vh;
+    border-radius: 23px;
+    outline: none;
+    border: none;
+    background-color: rgb(222, 222, 222);
+    display: none;
+}
+.profileInfo p {
+    font-size: 12px;
+}
+
+.profileInfo h3 {
+    font-weight: 500;
+}
+
+.divName {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    border: none;
+    text-align: center;
+
+}
+.notificationDropdown{
+    position: fixed;
+    right: -100%;
+    display: none;
+    height: 100%;
+    width: 28vw;
+    background-color: white;
+    z-index: 10;
+    border-radius: 12px;
+    overflow-y: auto;
+    padding: 12px;
+}
+.heading h2{
+    text-align: center;
+    font-weight: 500;
+}
+.heading{
+    padding: 12px;
+}
+.infoCard1{
+    padding: 6px 12px;
+    margin-top: 1rem;
+    background-color: white;
+    box-shadow: rgba(79, 79, 132, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    border-radius: 12px;
+}
+.commentContainer{
+    position: fixed;
+    height: 100%;
+    width: 28vw;
+    background: white;
+    z-index: 10;
+    right: -120%;
+    border-radius: 12px;
+    overflow-y: auto;
+    display: none;
+
+}
+.headingComment h2{
+    text-align: center;
+
+}
+.headingComment{
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search3{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+.search3 input{
+    width: 25vw;
+    height: 7vh;
+    border-radius: 23px;
+    outline: none;
+    border: 1px solid rgb(192, 192, 192);
+    padding: 0px 5px;
+}
+.message{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 1rem;
+    padding: 0px 22px;
+}
+.meSec{
+    margin-top: 3rem;
+    margin-left: 1rem;
+}
+.hoversec{
+    padding-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 17px;
+}
+.dropAccount{
+    position: fixed;
+    right: -120%;
+    background-color: white;
+    width: 28vw;
+    height: 100%;
+    z-index: 10;
+    overflow-y: auto;
+    display: none;
+
+}
+.dropTitle{
+    padding: 22px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: space-between;
+}
+.dropTitle h2{
+    font-weight: 500;
+    font-size: 16px;
+}
+.dropTitle p{
+    font-size: 13px;
+}
+.packet{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.bottomAccount{
+    padding: 12px;
+}
+.bottomAccount :nth-child(1){
+    font-size: 12px;
+}
+.bottomAccount :nth-child(2){
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.blue{
+    max-width: 27vw;
+    background-color: #d7edff;
+    margin: auto;
+    height: 12vh;
+    border-radius: 23px;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    padding: 12px;
+    gap: 10px;
+}
+.help{
+    margin-top: 1rem;
+    padding: 12px;
+}
+.help :nth-child(1){
+    font-size: 12px;
+}
+.helpCard :nth-child(1){
+    font-size: 18px;
+    font-weight: 500;
+
+}
+.helpCard{
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.socialSection {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    
+}
+
+.cursorPointer {
+    cursor: pointer;
+}
+
+.rig {
+    display: flex;
+    align-items: center;
+
+}
+
+.svg1 {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.svg1:hover {
+    background-color: rgb(218, 217, 217);
+    transition: 0.3s ease;
+}
+
+.svg2 {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.svg2:hover {
+    background-color: rgb(218, 217, 217);
+    transition: 0.3s ease;
+}
+
+.svg3 {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.svg3:hover {
+    background-color: rgb(218, 217, 217);
+    transition: 0.3s ease;
+}
+
+.svg4 {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.svg4:hover {
+    background-color: rgb(218, 217, 217);
+    transition: 0.3s ease;
+}
+
+.svg5 {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.svg5:hover {
+    background-color: rgb(218, 217, 217);
+    transition: 0.3s ease;
+}
+
+.svg6 {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-right: 12!px; */
+}
+
+.svg6:hover {
+    background-color: rgb(218, 217, 217);
+    transition: 0.3s ease;
+}
+.containerAccount{
+    /* border: 2px solid red; */
+    max-width: 50vw;
+    margin: auto;
+    min-height: 60vh;
+    border-radius: 23px;
+    background-image: url('./images/itachi.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+   
+}
+.accountInformation{
+    /* border: 1px solid black; */
+    height: 34vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.shrink{
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+.round{
+    background-color: red;
+    width: 124px;
+    height: 124px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 2;
+    border: 2px solid white;
+}
+
+.round a{
+    color: white;
+    text-decoration: none;
+    font-size: 54px;
+}
+.roundEdit{
+    width: 44px;
+    height: 44px;
+    background-color: rgb(39, 38, 38);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+}
+.roundEdit:hover{
+    background-color: black;
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+.title{
+    position: relative;
+    top: 37%;
+    text-align: center;
+}
+.title h1{
+    font-weight: 500;
+}
+.pinTitle{
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    
+}
+.store{
+    margin-top: 0.5rem;
+}
+.following{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 2.2rem;
+}
+.button :nth-child(1){
+   font-size: 16px;
+   padding: 10px;
+   width: 5rem;
+   background-color: rgb(224, 224, 224);
+   border: none;
+   border-radius: 23px;
+   font-weight: 500;
+}
+.button :nth-child(2){
+    font-size: 16px;
+    padding: 10px;
+    width: 8rem;
+    background-color: rgb(224, 224, 224);
+    border: none;
+    border-radius: 23px;
+    font-weight: 500;
+}
+.savedCards{
+    /* border: 1px solid black; */
+    margin-top: 4rem;
+    height: 57vh;
+}
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.heading p{
+    font-weight: 500;
+}
+
+.containers{
+    /* border: 1px solid red; */
+    height: 48vh;
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    /* border: 1px solid blue; */
+    width: 84vw;
+    height: 40vh;
+    margin-left: 0.5rem;
+    border-radius: 23px;
+
+}
+.containers :nth-child(1){
+    background-image: url('./images/cloth1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.containers :nth-child(2){
+    background-image: url('./images/cloth2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.containers :nth-child(3){
+    background-image: url('./images/cloth3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.containers :nth-child(4){
+    background-image: url('./images/cloth4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.containers :nth-child(5){
+    background-image: url('./images/cloth5.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.div1{
+    background-color: rgb(170, 170, 170);
+    color: white;
+    width: 9rem;
+    height: 7vh;
+    border-radius: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -76px;
+    left: 2%;
+}
+.div2{
+    position: relative;
+    left: 22%;
+    background-color: rgb(170, 170, 170);
+    color: white;
+    width: 9rem;
+    height: 7vh;
+    border-radius: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -120px;
+}
+.div3{
+    position: relative;
+    left: 42%;
+    background-color: rgb(170, 170, 170);
+    color: white;
+    width: 9rem;
+    height: 7vh;
+    border-radius: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -163px;
+}
+.div4{
+    position: relative;
+    left: 62%;
+    background-color: rgb(170, 170, 170);
+    color: white;
+    width: 9rem;
+    height: 7vh;
+    border-radius: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -203px;
+}
+.div5{
+    position: relative;
+    left: 82%;
+    background-color: rgb(170, 170, 170);
+    color: white;
+    width: 9rem;
+    height: 7vh;
+    border-radius: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -246px;
+}
+.div:hover{
+    background-color: black;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.heading :nth-child(1){
+    border-bottom: 2px solid black;
+}
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+.links ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+}
+.links ul li a{
+    color: black;
+    text-decoration: none;
+}
+.alist{
+    padding: 6px ;
+    /* border: 1px solid black; */
+    border-radius: 23px;
+    background-color: rgb(225, 225, 225);
+}
+.shippingContainer{
+    /* border: 1px solid red; */
+    margin-top: 0.5rem;
+}
+.shippingContainer h1{
+    text-align: center;
+    font-weight: 500;
+    font-size:40px;
+}
+.button1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+}
+.button1 button{
+    width: 7rem;
+    height: 6vh;
+    border-radius: 23px;
+    border: none;
+    background-color: red;
+    color: white;
+    
+}
+.shippingContainer p{
+    text-align: center;
+    font-size: 13px;
+}
+.containerBox1{
+    /* border: 1px solid red; */
+    max-width: 62vw;
+    margin: auto;
+    margin-top: 1rem;
+    min-height: 67vh;
+    border-radius: 23px;
+    display: flex;
+    align-items: center;
+    /* gap: 10px; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.left{
+    /* border: 1px solid black; */
+    width: 23vw;
+    height: 67vh ;
+    border-top-left-radius: 23px;
+    border-bottom-left-radius: 23px;
+}
+.top{
+    /* border: 2px solid red; */
+    height: 33vh;
+    border-top-left-radius: 23px;
+  background-image: url('./images/houseinp.jpg');
+  background-repeat: no-repeat;
+
+}
+.bottom{
+    /* border: 2px solid blue; */
+    height: 33vh;
+   background-image: url('./images/house.jpg');
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+    border-bottom-left-radius: 23px;
+}
+.right{
+    /* border: 1px solid red; */
+    width: 39vw;
+    height: 67vh;
+    border-top-right-radius: 23px;
+    border-bottom-right-radius: 23px;
+    display: flex;
+    align-items: center;
+    /* gap: 5px; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    padding-left: 12px;
+}
+.right h1{
+    margin-top: 1rem;
+    font-weight: 500;
+}
+.rightContent :nth-child(1){
+    font-size: 13px;
+}
+.rightContent :nth-child(3){
+    margin-top: 1rem;
+    font-size: 13px;
+}
+.button2{
+    padding-top: 12px;
+}
+.button2 .btn{
+    width: 7rem;
+    height: 6vh;
+    border-radius: 23px;
+    border: none;
+    background-color: red;
+    color: white;
+}
+.box-2 .top{
+  background-image: url('./images/container1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.box-2 .bottom{
+  background-image: url('./images/container2.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.box-3 .top{
+  background-image: url('./images/mansion1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.box-3 .bottom{
+  background-image: url('./images/mansion2.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.box-4 .top{
+  background-image: url('./images/mansion3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.box-4 .bottom{
+  background-image: url('./images/mansion4.avif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.box-5 .top{
+  background-image: url('./images/mansion5.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.box-5 .bottom{
+  background-image: url('./images/mansion6.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.box-7 .top{
+  background-image: url('./images/mansion1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.box-7 .bottom{
+  background-image: url('./images/mansion2.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.interest{
+    /* border: 1px solid red; */
+    height: 50vh;
+}
+.interest h1{
+    text-align: center;
+    font-weight: 500;
+    padding-top: 12px;
+}
+.intCards{
+    /* border: 1px solid black; */
+    height: 33vh;
+    display: flex;
+    align-items: center;
+    padding: 0px 12px;
+    justify-content: center;
+    gap: 15px;
+}
+.scard{
+    /* border: 1px solid blue; */
+    width: 22vw;
+    height: 27vh;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.intCards :nth-child(1){
+    background-image: url('./images/animal.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: brightness(70%);
+    
+}
+.intCards :nth-child(1) h2{
+    background: none;
+    color: red;
+    font-size: 34px;
+}
+.intCards :nth-child(2){
+    background-image: url('./images/anime.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: brightness(70%);
+    
+}
+.intCards :nth-child(2) h2{
+    background: none;
+    color: red;
+    font-size: 34px;
+}
+.intCards :nth-child(3){
+    background-image: url('./images/car.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: brightness(70%);
+    
+}
+.intCards :nth-child(3) h2{
+    background: none;
+    color: red;
+    font-size: 34px;
+}
+.intCards :nth-child(4){
+    background-image: url('./images/games.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: brightness(70%);
+    
+}
+.intCards :nth-child(4) h2{
+    background: none;
+    color: red;
+    font-size: 34px;
+}
+@media screen and (max-width: 1200px){
+    .divInformation{
+        top: 34%;
+    }
+    .boxInfo h1{
+        font-size: 22px;
+    }
+    }
+    @media screen and (max-width: 1025px) {
+        .containerHamInfo{
+            height: 42vh;
+        }
+        .round{
+            top: -15%;
+        }
+        .divInformation{
+            top: 16%;
+        }
+        .container{
+            pointer-events: none;
+        }
+        .divInformation button{
+            width: 12rem;
+        height: 5vh;
+        }
+        .containerHamInfo a{
+            top: 21%;
+        }
+        .containerCards{
+            flex-direction: column;
+        }
+        .card{
+            width: 88vw;
+        }
+        .card h1{
+            font-size: 22px;
+        }
+        .dropAccount{
+            width: 36vw;
+        }
+        .commentContainer{
+            width: 38vw;
+        }
+        .search3 input{
+            width: 32vw;
+            height: 5vh;
+        }
+        .notificationDropdown{
+            width: 43vw;
+        }
+        .containerAccount{
+            margin-top: 0.5rem !important;
+            max-width: 65vw;
+        }
+        .title{
+            top: 49%;
+        }
+        .button{
+            margin-top: 2.5rem;
+        }
+        .containers{
+            flex-direction: column;
+            height: 130vh;
+            gap: 20px;
+            overflow-y: auto;
+        }
+        .containers :nth-child(1){
+            height: 306%;
+                    width: 31vw;
+        }
+        .containers :nth-child(2){
+            height: 306%;
+                width: 31vw;
+        }
+        .containers :nth-child(3){
+            height: 161%;
+            width: 31vw;
+        }
+        .containers :nth-child(4){
+            height: 306%;
+            width: 31vw;
+        }
+        .containers :nth-child(5){
+            height: 306%;
+            margin-bottom: 1rem;
+            width: 31vw;
+        }
+        .div{
+            display: none;
+        }
+    }
+    @media screen and (max-width: 955px){
+        .divInformation h1{
+            font-size: 32px !important;
+        }
+        .boxInfo .btn{
+            font-size: 12px;
+        }
+        .container{
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+            height: 88vh;
+        }
+     .box1{
+        width: 96vw;
+     }
+    .box2{
+        width: 96vw;
+    }
+    .box3{
+        width: 96vw;
+        } 
+        .containerCards{
+            font-size: 11px;
+        }
+    }
+    @media screen and (max-width: 833px){
+        .containerHamInfo{
+            height: 42vh;
+        }
+        .divInformation{
+            top: 16%;
+        }
+        .container{
+            pointer-events: none;
+        }
+        .divInformation button{
+            width: 12rem;
+        height: 5vh;
+        }
+        .containerHamInfo a{
+            top: 21%;
+        }
+        .containerCards{
+            flex-direction: column;
+        }
+        .card{
+            width: 88vw;
+        }
+        .card h1{
+            font-size: 22px;
+        }
+        .dropAccount{
+            width: 36vw;
+        }
+        .commentContainer{
+            width: 38vw;
+        }
+        .search3 input{
+            width: 32vw;
+            height: 5vh;
+        }
+        .notificationDropdown{
+            width: 43vw;
+        }
+        .containerHamInfo{
+            height: 38vh;
+        }
+        .button{
+            margin-top: 3.5rem;
+        }
+        .containers .card{
+            width: 48vw;
+    height: 244rem;
+        }
+    }
+    @media screen and (max-width: 822px) {
+        .containerHamInfo{
+            height: 42vh;
+        }
+        .divInformation{
+            top: 16%;
+        }
+        .container{
+            pointer-events: none;
+        }
+        .divInformation button{
+            width: 12rem;
+        height: 5vh;
+        }
+        .containerHamInfo a{
+            top: 21%;
+        }
+        .containerCards{
+            flex-direction: column;
+        }
+        .card{
+            width: 88vw;
+        }
+        .card h1{
+            font-size: 22px;
+        }
+        .dropAccount{
+            width: 36vw;
+        }
+        .commentContainer{
+            width: 38vw;
+        }
+        .search3 input{
+            width: 32vw;
+            height: 5vh;
+        }
+        .notificationDropdown{
+            width: 43vw;
+        }
+        .containerAccount{
+            margin-top: 0.5rem !important;
+            max-width: 65vw;
+        }
+        .title{
+            top: 13%;
+        }
+        
+        .containers{
+            flex-direction: column;
+            height: 130vh;
+            gap: 20px;
+            overflow-y: auto;
+        }
+        .containers :nth-child(1){
+            height: 161%;
+                    width: 61vw;
+        }
+        .containers :nth-child(2){
+            height: 161%;
+                width: 61vw;
+        }
+        .containers :nth-child(3){
+            height: 161%;
+            width: 61vw;
+        }
+        .containers :nth-child(4){
+            height: 161%;
+            width: 61vw;
+        }
+        .containers :nth-child(5){
+            height: 161%;
+            margin-bottom: 1rem;
+            width: 61vw;
+        }
+        .div{
+            display: none;
+        }
+    }
+    @media screen and (max-width: 770px){
+        .containerHamInfo{
+            height: 42vh;
+        }
+        .divInformation{
+            top: 16%;
+        }
+        .container{
+            pointer-events: none;
+        }
+        .divInformation button{
+            width: 12rem;
+        height: 5vh;
+        }
+        .containerHamInfo a{
+            top: 21%;
+        }
+        .containerCards{
+            flex-direction: column;
+        }
+        .card{
+            width: 88vw;
+        }
+        .card h1{
+            font-size: 22px;
+        }
+        .dropAccount{
+            width: 36vw;
+        }
+        .commentContainer{
+            width: 38vw;
+        }
+        .search3 input{
+            width: 32vw;
+            height: 5vh;
+        }
+        .notificationDropdown{
+            width: 43vw;
+        }
+        .containerAccount{
+            margin-top: 0.5rem !important;
+            max-width: 65vw;
+        }
+        .title{
+            top: 19%;
+        }
+       
+        .containers{
+            flex-direction: column;
+            height: 130vh;
+            gap: 20px;
+            overflow-y: auto;
+        }
+        .containers :nth-child(1){
+            height: 161%;
+                    width: 61vw;
+        }
+        .containers :nth-child(2){
+            height: 161%;
+                width: 61vw;
+        }
+        .containers :nth-child(3){
+            height: 161%;
+            width: 61vw;
+        }
+        .containers :nth-child(4){
+            height: 161%;
+            width: 61vw;
+        }
+        .containers :nth-child(5){
+            height: 161%;
+            margin-bottom: 1rem;
+            width: 61vw;
+        }
+        .div{
+            display: none;
+        }
+    }
+    @media screen and (max-width: 652px){
+        .title{
+            top: 47%;
+        }
+        .button{
+            margin-top: 46px !important;
+        }
+    }
+    @media screen and (max-width: 650px){
+        body,html{
+            overflow-x: hidden;
+        }
+        .store{
+            width: 85vw;
+        }
+        .profile{
+            display: none;
+        }
+        .container{
+            pointer-events: none;
+        }
+        .svg4 , .svg5{
+            display: none;
+        }
+        .divInformation{
+            height: 55px;
+        }
+        .divInformation h1{
+            font-size: 31px !important;
+        }
+        .divInformation button{
+            height: 9vh;
+        }
+        nav{
+            position: fixed;
+            top: 0;
+            width: 94vw;
+        }
+        .notificationDropdown{
+            top: 17%;
+            width: 35vw;
+        }
+        .commentContainer{
+            top: 12%;
+            width: 37vw;
+            overflow: auto;
+        }
+        .title{
+            top: 30%;
+        }
+        .button{
+            margin-top: 67px !important;
+        }
+        .shippingContainer{
+            margin-top: 2.5rem;
+            height: 41vh;
+        }
+        .button1 .btn{
+            height: 8vh;
+        }
+        .containerBox1{
+            max-width: 79vw;
+        }
+        .containerBox1 .left{
+            width: 38vw;
+        }
+        .containerBox1 .right h1{
+            font-size: 23px;
+        }
+        .links{
+            margin-top: 6rem;
+        }
+        .links ul{
+            gap: 13px;
+            font-size: 9px;
+        }
+        .shippingContainer{
+            margin-top: 0.5rem;
+            height: 23vh;
+        }
+        .shippingContainer h1{
+            font-size: 28px;
+        }
+        .button1 .btn{
+            height: 4vh;
+        }
+        .shippingContainer p{
+            font-size: 12px;
+        }
+        .containerBox1{
+            flex-direction: column;
+            height: 61vh;
+        }
+        .button2 .btn{
+            height: 5vh;
+        }
+        .containerBox1 .bottom{
+            display: none;
+        }
+        .containerBox1 .left{
+            width: 79vw;
+            border-top-right-radius : 23px;
+            height: 33vh;
+        }
+        .containerBox1 .left .top{
+            border-top-right-radius : 23px;
+        }
+        .containerBox1 .right{
+            width: 76vw;
+            border-top-right-radius: unset;
+            align-items: unset;
+            height: 40vh;
+            border-bottom-left-radius: 23px;
+        }
+        .containerBox1 .rightContent{
+            margin-top: 1rem;
+        }
+        .intCards{
+            flex-direction: column;
+            height: 101vh;
+        }
+        .scard{
+            width: 79vw;
+        }
+        }
+    
+        @media screen and (max-width: 600px){
+            .links{
+                margin-top: 6rem;
+            }
+            .links ul{
+                gap: 13px;
+                font-size: 9px;
+            }
+            .shippingContainer{
+                margin-top: 0.5rem;
+                height: 23vh;
+            }
+            .shippingContainer h1{
+                font-size: 28px;
+            }
+            .button1 .btn{
+                height: 4vh;
+            }
+            .shippingContainer p{
+                font-size: 12px;
+            }
+            .containerBox1{
+                flex-direction: column;
+                height: 73vh;
+            }
+            .button2 .btn{
+                height: 5vh;
+            }
+            .containerBox1 .bottom{
+                display: none;
+            }
+            .containerBox1 .left{
+                width: 79vw;
+                border-top-right-radius : 23px;
+                height: 33vh;
+            }
+            .containerBox1 .left .top{
+                border-top-right-radius : 23px;
+            }
+            .containerBox1 .right{
+                width: 76vw;
+                border-top-right-radius: unset;
+                align-items: unset;
+                height: 40vh;
+                border-bottom-left-radius: 23px;
+            }
+            .containerBox1 .rightContent{
+                margin-top: 1rem;
+            }
+            .intCards{
+                flex-direction: column;
+                height: 101vh;
+            }
+            .scard{
+                width: 79vw;
+            }
+        }
+    @media screen and (max-width: 550px){
+        .title{
+            top: 35%;
+        }
+        .button{
+            margin-top: 0.5rem;
+        }
+        .containerAccount{
+            margin-top: 5.5rem !important;
+        }
+    }
+    @media screen and (max-width: 440px){
+         .containerHamInfo{
+            height: 28vh;
+        }
+        .container{
+            pointer-events: none;
+        }
+        .containerHamInfo a{
+            top: 10%;
+        }
+        .listItems {
+            height: 28vh;
+        }
+        .divInformation h1{
+            font-size: 16px !important;
+        }
+        .divInformation {
+            top: 11%;
+        }
+        .divInformation button{
+            height: 4vh;
+            width: 32vw;
+        }
+        .exploreBest h1{
+            font-size: 22px;
+        }
+        .box2, .box3{
+            margin-left: 0;
+        }
+        .containerCards{
+            flex-direction: column;
+        }
+        .card{
+            width: 84vw;
+        }
+        .card h1{
+            font-size: 27px !important;
+        }
+        .menuInfo{
+            top: 8%;
+            width: 40vw;
+        }
+        .notificationDropdown{
+            top: 8%;
+            width: 47vw;
+        }
+        .commentContainer{
+            top: 8%;
+            width: 56vw;
+        }
+        .search3 input{
+            width: 47vw;
+        height: 5vh;
+        }
+        .dropAccount {
+            top: 8%;
+            width: 49vw;
+        }
+        .blue{
+            max-width: 39vw;
+            font-size: 14px;
+        }
+        .title{
+            top: 28%;
+        }
+        .links{
+            margin-top: 6rem;
+        }
+        .links ul{
+            gap: 13px;
+            font-size: 9px;
+        }
+        .shippingContainer{
+            margin-top: 0.5rem;
+            height: 23vh;
+        }
+        .shippingContainer h1{
+            font-size: 28px;
+        }
+        .button1 .btn{
+            height: 4vh;
+        }
+        .shippingContainer p{
+            font-size: 12px;
+        }
+        .containerBox1{
+            flex-direction: column;
+            height: 61vh;
+        }
+        .button2 .btn{
+            height: 5vh;
+        }
+        .containerBox1 .bottom{
+            display: none;
+        }
+        .containerBox1 .left{
+            width: 79vw;
+            border-top-right-radius : 23px;
+            height: 33vh;
+        }
+        .containerBox1 .left .top{
+            border-top-right-radius : 23px;
+        }
+        .containerBox1 .right{
+            width: 76vw;
+            border-top-right-radius: unset;
+            align-items: unset;
+            height: 40vh;
+            border-bottom-left-radius: 23px;
+        }
+        .containerBox1 .rightContent{
+            margin-top: 1rem;
+        }
+        .intCards{
+            flex-direction: column;
+            height: 101vh;
+        }
+        .scard{
+            width: 79vw;
+        }
+       
+    }
+    @media screen and (max-width: 415px){
+        .containerHamInfo{
+            height: 28vh;
+        }
+        .container{
+            pointer-events: none;
+        }
+        .containerHamInfo a{
+            top: 10%;
+        }
+        .listItems {
+            height: 28vh;
+        }
+        .divInformation h1{
+            font-size: 16px !important;
+        }
+        .divInformation {
+            top: 11%;
+        }
+        .divInformation button{
+            height: 4vh;
+            width: 32vw;
+        }
+        .exploreBest h1{
+            font-size: 22px;
+        }
+        .box2, .box3{
+            margin-left: 0;
+        }
+        .containerCards{
+            flex-direction: column;
+        }
+        .card{
+            width: 84vw;
+        }
+        .card h1{
+            font-size: 27px !important;
+        }
+        .menuInfo{
+            top: 8%;
+            width: 40vw;
+        }
+        .notificationDropdown{
+            top: 8%;
+            width: 47vw;
+        }
+        .commentContainer{
+            top: 8%;
+            width: 56vw;
+        }
+        .search3 input{
+            width: 47vw;
+        height: 5vh;
+        }
+        .dropAccount {
+            top: 8%;
+            width: 49vw;
+        }
+        .blue{
+            max-width: 39vw;
+            font-size: 14px;
+        }
+
+        .containerAccount{
+            margin-top: 5.6rem !important;
+            max-width: 78vw;
+        }
+        .title{
+            top: 24%;
+        }
+      .button{
+        margin-top: 78px !important;
+      }
+        .containers{
+            flex-direction: column;
+            height: 130vh;
+            gap: 20px;
+            overflow-y: auto;
+        }
+        .containers :nth-child(1){
+            height: 161%;
+        }
+        .containers :nth-child(2){
+            height: 161%;
+        }
+        .containers :nth-child(3){
+            height: 161%;
+        }
+        .containers :nth-child(4){
+            height: 161%;
+        }
+        .containers :nth-child(5){
+            height: 161%;
+            margin-bottom: 1rem;
+        }
+        .div{
+            display: none;
+        }
+        .links{
+            margin-top: 6rem;
+        }
+        .links ul{
+            gap: 13px;
+            font-size: 9px;
+        }
+        .shippingContainer{
+            margin-top: 0.5rem;
+            height: 23vh;
+        }
+        .shippingContainer h1{
+            font-size: 28px;
+        }
+        .button1 .btn{
+            height: 4vh;
+        }
+        .shippingContainer p{
+            font-size: 12px;
+        }
+        .containerBox1{
+            flex-direction: column;
+            height: 61vh;
+        }
+        .button2 .btn{
+            height: 5vh;
+        }
+        .containerBox1 .bottom{
+            display: none;
+        }
+        .containerBox1 .left{
+            width: 79vw;
+            border-top-right-radius : 23px;
+            height: 33vh;
+        }
+        .containerBox1 .left .top{
+            border-top-right-radius : 23px;
+        }
+        .containerBox1 .right{
+            width: 76vw;
+            border-top-right-radius: unset;
+            align-items: unset;
+            height: 40vh;
+            border-bottom-left-radius: 23px;
+        }
+        .containerBox1 .rightContent{
+            margin-top: 1rem;
+        }
+        .intCards{
+            flex-direction: column;
+            height: 101vh;
+        }
+        .scard{
+            width: 79vw;
+        }
+    }
+    @media screen and (max-width: 400px){
+.title{
+    top: 28%;
+}
+    }
+    @media screen and (max-width: 391px){
+        .dropAccount{
+            width: 58vw;
+        }
+        .blue{
+            max-width: 53vw;
+        }
+        .container{
+            pointer-events: none;
+        }
+        .links{
+            margin-top: 5rem;
+        }
+        .links ul{
+            gap: 13px;
+            font-size: 9px;
+        }
+        .shippingContainer{
+            margin-top: 0.5rem;
+            height: 23vh;
+        }
+        .shippingContainer h1{
+            font-size: 28px;
+        }
+        .button1 .btn{
+            height: 5vh;
+        }
+        .shippingContainer p{
+            font-size: 12px;
+        }
+        .containerBox1{
+            flex-direction: column;
+        }
+        .containerBox1 .bottom{
+            display: none;
+        }
+        .containerBox1 .left{
+            width: 79vw;
+            border-top-right-radius : 23px;
+            height: 33vh;
+        }
+        .containerBox1 .left .top{
+            border-top-right-radius : 23px;
+        }
+        .containerBox1 .right{
+            width: 76vw;
+            border-top-right-radius: unset;
+            align-items: unset;
+            height: 40vh;
+            border-bottom-left-radius: 23px;
+        }
+        .containerBox1 .rightContent{
+            margin-top: 1rem;
+        }
+        .intCards{
+            flex-direction: column;
+            height: 101vh;
+        }
+        .scard{
+            width: 79vw;
+        }
+       
+    }
+    @media screen and (max-width: 378px){
+        nav{
+            padding: 11px 9px;
+            width: 96vw;
+        }
+        .containerHamInfo{
+            height: 32vh;
+        }
+        .listItems img{
+            width: 100vw;
+            height: 34vh;
+        }
+        .listItems{
+            height: 34vh;
+        }
+        .containerHamInfo a{
+            top: 12%;
+        }
+        .divInformation{
+            top: 14%;
+        }
+        .card{
+            width: 77vw;
+        }
+        .divInformation h1{
+            font-size: 12px !important;
+        }
+        .divInformation button{
+            height: 4vh;
+        width: 29vw;
+        font-size: 12px;
+        }
+        .notificationDropdown{
+            width: 58vw;
+        }
+        .commentContainer{
+            width: 60vw;
+        }
+        .dropAccount{
+            width: 58vw;
+        }
+        .blue{
+            max-width: 49vw;
+        }
+        .container{
+            pointer-events: none;
+        }
+        .containerAccount{
+            max-width: 70vw;
+            margin-top: 4.5rem;
+        }
+        .button{
+            margin-top: 1.5rem;
+        }
+        .containers{
+            flex-direction: column;
+            height: 130vh;
+            gap: 20px;
+            overflow-y: auto;
+        }
+        .containers :nth-child(1){
+            height: 161%;
+        }
+        .containers :nth-child(2){
+            height: 161%;
+        }
+        .containers :nth-child(3){
+            height: 161%;
+        }
+        .containers :nth-child(4){
+            height: 161%;
+        }
+        .containers :nth-child(5){
+            height: 161%;
+            margin-bottom: 1rem;
+        }
+        .div{
+            display: none;
+        }
+        .title{
+            top: 39% ;
+        }
+       .containerBox1{
+        height: 71vh;
+       }
+
+    }
+    @media screen and (max-width: 340px){
+    .containerAccount{
+        max-width: 85vw;
+    }
+    }
+    @media screen and (max-width: 330px){
+        .containerHamInfo{
+            height: 39vh;
+        }
+        .listItems{
+            height: 39vh;
+    
+        }
+        .listItems img{
+            height: 39vh;
+        }
+        .container{
+            height: 100vh;
+        }
+        .card{
+            width: 72vw;
+        }
+        .card h1{
+            font-size: 15px !important;
+        }
+        .container{
+            pointer-events: none;
+        }
+        .button{
+            margin-top: 3.5rem !important;
+        }
+        .links{
+            margin-top: 6rem;
+        }
+        .links ul{
+            gap: 13px;
+            font-size: 7px;
+        }
+        .shippingContainer{
+            margin-top: 0.5rem;
+            height: 23vh;
+        }
+        .shippingContainer h1{
+            font-size: 23px;
+        }
+        .button1 .btn{
+            height: 4vh;
+        }
+        .shippingContainer p{
+            font-size: 12px;
+        }
+        .containerBox1{
+            flex-direction: column;
+            height: 77vh;
+            max-width: 91vw;
+        }
+        .button2 .btn{
+            height: 5vh;
+        }
+        .containerBox1 .bottom{
+            display: none;
+        }
+        .containerBox1 .left{
+            width:91vw;
+            border-top-right-radius : 23px;
+            height: 33vh;
+           
+        }
+        .containerBox1 .left .top{
+            border-top-right-radius : 23px;
+        }
+        .containerBox1 .right{
+            width: 87vw;
+            border-top-right-radius: unset;
+            align-items: unset;
+            height: 44vh;
+            border-bottom-left-radius: 23px;
+        }
+        .containerBox1 .rightContent{
+            margin-top: 1rem;
+        }
+        .intCards{
+            flex-direction: column;
+            height: 101vh;
+        }
+        .scard{
+            width: 79vw;
+        }
+    }
+    @media screen and (max-width: 310px){
+        .round{
+            top: -31%;
+        }
+        .containerAccount{
+            max-width: 88vw;
+        }
+        .title{
+            top: 26%;
+        }
+       .button{
+        margin-top: 5.5rem !important;
+       }
+        .containerBox1{
+            margin-top: 2rem;
+            height: 84vh;
+        }
+        .containerBox1 .right{
+            height: 84vh;
+        }
+    }
